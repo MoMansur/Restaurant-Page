@@ -1,21 +1,17 @@
-
+import homePageDom from './home.js';
 import './style.css';
 
 function component() {
-    const element = document.createElement('div');
+  const contentDiv = document.getElementById('content')
  
     
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-   element.classList.add('hello');
+contentDiv.classList.add('container')
+  contentDiv.append(homePageDom())
  
 
-     // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
-
-  element.appendChild(myIcon);
   
-    return element;
+
+    return contentDiv;
   }
  
   document.body.appendChild(component());

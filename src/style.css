@@ -1,11 +1,47 @@
 
+body{
+    background: url(./img/back2.png);
+    margin: 0px;
+}
+
 header{
     display: flex;
     border: 1px solid darkorange;
-    background-color: aqua;
-    
+    background-color: #000000;
+    height: 60px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: darkorange;
+    border: none;
+    border-radius: 5px;
 }
 
-.hello {
-    color: red;
-  }
+span{
+    background: url(./img/logo.png);
+}
+
+.container{
+    border: 5px solid orange;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.homeContainer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid orange;
+    width: 800px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
