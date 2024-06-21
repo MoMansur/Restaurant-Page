@@ -18,30 +18,69 @@ header{
 button{
     width: 200px;
     height: 50px;
-    background-color: darkorange;
+    background-color:orange;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: darkorange;
 }
 
-span{
-    background: url(./img/logo.png);
-}
 
-.container{
+
+.contentDiv{
     border: 5px solid orange;
+    background-image: url(./img/logo.png);
     height: 100vh;
     display: flex;
     justify-content: center;
     padding: 10px;
 }
 
-.homeContainer{
+.container{
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    border: 3px solid orange;
+    display: block;
+    
+    border: 1px solid orange;
     width: 800px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.723);
     color: white;
     border-radius: 20px;
+}
+
+#firstSection{
+    width: 100%;
+    height: 60px;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    align-content: center;
+    color: red;
+    font-weight: bold;
+
+}
+
+
+#openingHoursSection{
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+h2{
+    color: red;
+}
+ul{
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: orange;
+}
+
+li{
+
 }
