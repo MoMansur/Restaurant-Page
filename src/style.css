@@ -43,7 +43,7 @@ button:hover{
 .container{
     padding: 10px;
     display: block;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 800px;
     background-color: rgba(0, 0, 0, 0.96);
     color: white;
@@ -63,35 +63,49 @@ button:hover{
 
 }
 
+.HomeTitle{
+    text-align: center;
+    color: orange;
+}
+
 .resturantDescription{
     color: orange;
     margin: 10px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 #openingHoursSection{
     margin: 10px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
     padding: 10px;
-    /* justify-content: center; */
+    justify-content: center;
     display: flex;
+    text-align: center;
 }
 
 h2{
     color: red;
+    border-bottom: 1px solid orange;
+  
+}
+.opnHrs{
+    font-size: 3rem;
 }
 ul{
     font-size: larger;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     color: orange;
-
+    font-size: 2rem;
     list-style: none;
     padding: 0;
+    border-bottom: 1px solid orange;
 }
 
 li{
- font-size: 18px;
+    font-size: 2rem;
     margin: 5px 0;
     color: green;
 }

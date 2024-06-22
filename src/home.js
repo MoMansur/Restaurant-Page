@@ -17,6 +17,7 @@ export default function homePageDom(container){
    // Title
    const title = document.createElement("h1");
    title.textContent = "Welcome to Zulu Restaurant";
+   title.className = "HomeTitle"
    secondSection.appendChild(title);
 
    // Description
@@ -30,18 +31,16 @@ export default function homePageDom(container){
    image.src = imagelogo
    image.alt = "Zulu Restaurant";
    image.style.height = '400px';
+   image.style.width = '750px'
 
    
-   secondSection.appendChild(image);
 
 
   const openingHoursSection = document.createElement('div')
-  
   openingHoursSection.id = 'openingHoursSection'
 
   const openingHours = document.createElement('div')
-
-  openingHours.innerHTML = `<h2>Opening Hours</h2>
+  openingHours.innerHTML = `<h2 class="opnHrs">Opening Hours</h2>
                             <ul>Sunday<li>7AM-11PM</li></ul>
                             <ul>Monday<li>7AM-11PM</li></ul>
                             <ul>Tuesday<li>7AM-11PM</li></ul>
@@ -58,6 +57,7 @@ export default function homePageDom(container){
     secondSection.append(openingHoursSection)
     container.append(secondSection)
     
+    secondSection.appendChild(image);
 
 
     return firstSection
