@@ -14,7 +14,7 @@ export default function aboutUsPageDom(container){
 
     // Create and append the heading
     const heading = document.createElement('h1');
-    heading.textContent = 'About Us';
+    heading.textContent = 'Welcome';
     aboutContainer.append(heading);
 
     // Create and append the address

@@ -3,22 +3,6 @@ import menuPage from './menu.js';
 import homePageDom from './home.js';
 import aboutUsPageDom from './about.js';
 
-// import logo from './img/logo.png'
-function switchTab(tab) {
-  switch (tab) {
-      case "home":
-        window.location.href = "index.html";  
-      break;
-    case "contact":
-      createContactPage();
-      break;
-    case "menu":
-      createMenuPage();
-      break;
-    default:
-      break;
-  }
-}
 
 function component() {
 const header = document.createElement('header');
@@ -66,7 +50,8 @@ document.body.appendChild(contentDiv);
 //APPENDERS
  
 contentDiv.append(Container)  
-menuPage(Container)
+homePageDom(Container)
+
 
 // aboutUsPageDom(Container)
 homeButton.addEventListener('click', ()=>{
@@ -78,7 +63,10 @@ menuButton.addEventListener('click', ()=>{
 
   })
 
-
+aboutButton.addEventListener('click', ()=>{
+  Container.innerHTML = ""
+  aboutUsPageDom(Container)
+})
   
     return contentDiv;
   }

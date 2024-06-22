@@ -1,6 +1,7 @@
 
 body{
     margin: 0px;
+   
     
 }
 
@@ -28,16 +29,15 @@ button:hover{
     background-color: darkorange;
 }
 
-
-
 #content{
-    border: 5px solid orange;
+    border: 1px solid black;
     background-image: url(./img/logo.png);
     font-family:'Courier New', Courier, monospace;
-    height: auto;
     display: flex;
     justify-content: center;
     padding: 10px;
+    height: auto;
+    min-height: 100vh;
 }
 
 .container{
@@ -45,7 +45,7 @@ button:hover{
     display: block;
     border: 1px solid orange;
     width: 800px;
-    background-color: rgba(0, 0, 0, 0.904);
+    background-color: rgba(0, 0, 0, 0.96);
     color: white;
     border-radius: 20px;
 }
@@ -63,12 +63,17 @@ button:hover{
 
 }
 
+.resturantDescription{
+    color: orange;
+    margin: 10px;
+}
 
 #openingHoursSection{
     margin: 10px;
     border: 1px solid red;
     border-radius: 10px;
-    justify-content: center;
+    padding: 10px;
+    /* justify-content: center; */
     display: flex;
 }
 
@@ -80,18 +85,26 @@ ul{
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     color: orange;
-}
-/* 
-li{
 
-} */
+    list-style: none;
+    padding: 0;
+}
+
+li{
+ font-size: 18px;
+    margin: 5px 0;
+    color: green;
+}
 
 menu{
     justify-content: center;
     display: flex;
 }
 
-
+.buttonsDiv{
+    display: flex;
+    justify-content: center;
+}
 
 
 img {
@@ -102,23 +115,27 @@ img {
 .menu-button{
     background-color: black;
     color: white;
+    height: 40px;
+    width: 250px;
     border-bottom: 1px solid orange;
 }
 .menuImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 280px;
     height: 220px;
     max-height: 220px;
     border-radius: 10px;
-        border: 2px solid darkgoldenrod;
-
-
+    border: 2px solid darkgoldenrod;
 }
 
 .menu-item{
-    border: 1px solid orange;
     display: flex;
     margin: 10px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 153, 0, 0.214);
+    box-shadow: 0px -4px 10px rgba(220, 161, 0, 0.284);
 }
 
 .titleandDescription{
@@ -135,5 +152,6 @@ img {
     padding: 10px;
     height: 30px;
     line-height: 30px;
+    margin-top: 195px;
     
 }
