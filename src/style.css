@@ -1,20 +1,29 @@
 
 body{
     margin: 0px;
-   
+   background-color: #000000;
     
 }
 
 header{
-    display: flex;
     border: 1px solid darkorange;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: #000000;
-    height: 60px;
+    height: 80px;
     margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.logo{
+    width: 200px;
+    height: 53px;
+    border: 1px solid orange;
+    float: left;
+    
+}
+
 
 button{
     width: 200px;
@@ -33,7 +42,6 @@ button:hover{
     border: 1px solid black;
     background-image: url(./img/logo.png);
     font-family:'Courier New', Courier, monospace;
-    display: flex;
     justify-content: center;
     padding: 10px;
     height: auto;
@@ -44,10 +52,11 @@ button:hover{
     padding: 10px;
     display: block;
     /* border: 1px solid orange; */
-    width: 800px;
+    width: 900px;
     background-color: rgba(0, 0, 0, 0.96);
     color: white;
     border-radius: 20px;
+    margin: auto;
 }
 
 #firstSection{
@@ -83,6 +92,7 @@ button:hover{
     justify-content: center;
     display: flex;
     text-align: center;
+    align-items: center;
 }
 
 h2{
@@ -91,21 +101,21 @@ h2{
   
 }
 .opnHrs{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 ul{
     font-size: larger;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     color: orange;
-    font-size: 2rem;
+    font-size: 1.5rem;
     list-style: none;
     padding: 0;
     border-bottom: 1px solid orange;
 }
 
 li{
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 5px 0;
     color: green;
 }
@@ -169,3 +179,27 @@ img {
     margin-top: 195px;
     
 }
+
+.addressClass{
+    color: orange;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aboutUsDesc{
+    color: orange;
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.addressDetails{
+    color: darkgoldenrod;
+}
+
+footer{
+    color: darkgoldenrod;
+    text-align: center;
+    margin: 10px;
+}
+
