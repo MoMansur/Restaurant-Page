@@ -2,6 +2,8 @@
 
 export default function homePageDom(container){
     
+  container.innerHTML = ""
+  
   const firstSection = document.createElement('span')
   firstSection.innerHTML = 'Zulu Restaurant'
   firstSection.id = 'firstSection'

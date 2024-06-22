@@ -5,7 +5,7 @@ import jollofFood from './img/food2.png'
 export default function menuPage(container){
 
     container.innerHTML = ""
-    
+
     const firstSection = document.createElement('span')
     firstSection.innerHTML = 'Zulu Menu'
     firstSection.id = 'firstSection'
@@ -52,6 +52,7 @@ export default function menuPage(container){
 
         const price = document.createElement("h3");
         price.textContent = item.price;
+        price.className = 'priceBox'
         menuItem.appendChild(price);
     });
 }

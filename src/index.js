@@ -1,6 +1,7 @@
 import './style.css';
 import menuPage from './menu.js';
 import homePageDom from './home.js';
+import aboutUsPageDom from './about.js';
 
 // import logo from './img/logo.png'
 function switchTab(tab) {
@@ -63,13 +64,20 @@ document.body.appendChild(contentDiv);
   
 
 //APPENDERS
-  contentDiv.append(Container)  
  
-  menuButton.addEventListener('click', ()=>{
+contentDiv.append(Container)  
+// menuPage(Container)
+
+aboutUsPageDom(Container)
+homeButton.addEventListener('click', ()=>{
+  homePageDom(Container)
+})
+
+menuButton.addEventListener('click', ()=>{
     menuPage(Container)
 
   })
- homePageDom(Container)
+
 
   
     return contentDiv;

@@ -1,6 +1,5 @@
 
 body{
-    background: url(./img/back2.png);
     margin: 0px;
     
 }
@@ -31,11 +30,10 @@ button:hover{
 
 
 
-.contentDiv{
+#content{
     border: 5px solid orange;
     background-image: url(./img/logo.png);
     font-family:'Courier New', Courier, monospace;
-
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -45,7 +43,6 @@ button:hover{
 .container{
     padding: 10px;
     display: block;
-    
     border: 1px solid orange;
     width: 800px;
     background-color: rgba(0, 0, 0, 0.723);
@@ -98,4 +95,14 @@ img{
     width: 400px;
     height: 200px;
 
+}
+
+.priceBox{
+    background-color: darkorange;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
 }
