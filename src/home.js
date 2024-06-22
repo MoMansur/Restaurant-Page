@@ -3,11 +3,12 @@
 export default function homePageDom(container){
     
   container.innerHTML = ""
-  
+
   const firstSection = document.createElement('span')
   firstSection.innerHTML = 'Zulu Restaurant'
   firstSection.id = 'firstSection'
   firstSection.style.borderBottom = '1px solid orange'
+
 
   const openingHoursSection = document.createElement('div')
   
@@ -28,6 +29,8 @@ export default function homePageDom(container){
     
     container.append(firstSection)
     container.append(openingHoursSection)
+
+    
 
 
     return firstSection

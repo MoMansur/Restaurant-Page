@@ -66,9 +66,9 @@ document.body.appendChild(contentDiv);
 //APPENDERS
  
 contentDiv.append(Container)  
-// menuPage(Container)
+menuPage(Container)
 
-aboutUsPageDom(Container)
+// aboutUsPageDom(Container)
 homeButton.addEventListener('click', ()=>{
   homePageDom(Container)
 })
